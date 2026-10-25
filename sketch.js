@@ -62,11 +62,12 @@ function draw(){
 function mousePressed(){
   let d = dist(mouseX, mouseY, ovalX, ovalY);
   
-  
+  // Checks if oval is clicked
   if(d < shapeSize/2){
     ovalSpinning = !ovalSpinning;
   }
   
+  // Checks if square is clicked
   if((mouseX > squareX - shapeSize/2) && (mouseX < squareX + shapeSize/2) && (mouseY > squareY - shapeSize/2) && (mouseY < squareY + shapeSize/2)){
     squareSpinning = !squareSpinning;
   }
